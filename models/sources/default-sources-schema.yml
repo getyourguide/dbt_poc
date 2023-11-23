@@ -6,3 +6,4 @@ sources:
       schema: default
       tables:
         - name: agg_selection_tour_funnel_events
+        - name: events

@@ -1,0 +1,19 @@
+version: 2
+
+
+models:
+  - name: agg_selection_tour_funnel_dbt_poc
+    description: This table aggregates a suppliers initial events with GYG in a wide format
+    columns:
+      - name: supplier_id
+        tests:
+          - unique
+          - not_null
+
+  - name: dim_vendor_acquisition_dbt_poc
+    description: This incremental table selects a newly registered supplier's registration action with the touchpoint at the conversion.
+    columns:
+      - name: supplier_id
+        tests:
+          - unique
+          - not_null
