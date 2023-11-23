@@ -1,5 +1,4 @@
-{% set events = [
-    ['tourcreationstarted', 'toursubmitted', 'tourapproved', 'firstbooking']  %}
+{% set events = ['tourcreationstarted', 'toursubmitted', 'tourapproved', 'firstbooking']  %}
 
 with funnel_events as (
 
@@ -12,7 +11,10 @@ select
     tour_id,
     {% for item in events %}
 
-        min(case when funnel_step = lower({{item}}) then date_id else null end) as date_{{item}}
+        min(case when lower(funnel_step) = '{{item}}' then event_timestamp else null end) as date_{{item}}{% if not loop.last %}, {% endif %}
     {% endfor  %}
 
    from funnel_events
+
+    {{dbt_utils.group_by(1)}}
+    
