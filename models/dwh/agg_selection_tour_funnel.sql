@@ -1,11 +1,6 @@
 {% set events = [
-    'TourCreationStarted',
-    'TourContentAdded',
-    'TourSubmitted',
-    'TourApproved',
-    'FirstBooking',
-    'ThirdReview'
-    ] %}
+    ['tourcreationstarted', 'toursubmitted', 'tourapproved', 'firstbooking']  %}
+
 with funnel_events as (
 
     select * from {{ source('dbt_poc', 'agg_selection_tour_funnel_events')}}
@@ -15,10 +10,9 @@ with funnel_events as (
 select
 
     tour_id,
-    {% for item in ['tourcreationstarted', 'toursubmitted', 'tourapproved', 'firstbooking'] %}
+    {% for item in events %}
 
         min(case when funnel_step = lower({{item}}) then date_id else null end) as date_{{item}}
     {% endfor  %}
 
-   from
-
+   from funnel_events
