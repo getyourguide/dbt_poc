@@ -3,7 +3,7 @@ jaffle_shop:
   outputs:
     dev:
       type: databricks
-      schema: dbt_hackdays
+      schema: test
       host: "{{ env_var('DBR_HOST') }}"
       http_path: "{{ env_var('DBR_HTTP_PATH') }}"
       token: "{{ env_var('DBR_TOKEN') }}" # Personal Access Token (PAT)
