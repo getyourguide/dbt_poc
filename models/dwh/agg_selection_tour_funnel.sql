@@ -2,7 +2,7 @@
 
 with funnel_events as (
 
-    select * from {{ source('dbt_poc', 'agg_selection_tour_funnel_events')}}
+    select * from {{ source('default', 'agg_selection_tour_funnel_events')}}
 
 
 )

@@ -1,8 +1,9 @@
 version: 2
 
 sources:
-    - name: dbt_poc
+    - name: default
       database: hive_metastore
       schema: default
       tables:
         - name: agg_selection_tour_funnel_events
+        - name: brand_de_ooh_berlinbikes_2023_manualbaptiste

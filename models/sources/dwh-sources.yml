@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+    - name: dwh
+      database: hive_metastore
+      schema: dwh
+      tables:
+        - name: dim_country
