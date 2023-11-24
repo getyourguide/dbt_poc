@@ -26,6 +26,15 @@ models:
         materialized: view
 
 vars:
+  # The `start_date` variable will be accessible in all resources
+  start_date: '2019-06-01'
+  test_schema: 'test_test'
+  default_schema: 'default_test'
+  dwh_schema: 'dwh_test'
+  events_schema: 'events_test'
+  marketplace_reports_schema: 'marketplace_reports_test'
+  public_schema: 'public_test'
+  reports_schema: 'reports_test'
   SUPPLIER_DOMAIN: supplier_getyourguide.com
   SUPPLIER: supplier
   EVENT_UICLICK: UIClick

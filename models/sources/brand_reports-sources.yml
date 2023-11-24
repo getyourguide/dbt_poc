@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+    - name: brand_reports
+      database: hive_metastore
+      schema: brand_reports
+      tables:
+        - name: weekly_pilot_campaign_report
+        - name: weekly_initiative_report
+        - name: gainshare_report
