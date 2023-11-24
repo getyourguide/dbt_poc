@@ -35,4 +35,8 @@ vars:
   marketplace_reports_schema: 'marketplace_reports_test'
   public_schema: 'public_test'
   reports_schema: 'reports_test'
-
+  SUPPLIER_DOMAIN: supplier_getyourguide.com
+  SUPPLIER: supplier
+  EVENT_UICLICK: UIClick
+  EVENT_SUPPLIERWEBUICLICK: SupplierWebUIClick
+  TARGET_SUPPLIERREGISTERACTION: SupplierRegisterAction

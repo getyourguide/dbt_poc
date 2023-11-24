@@ -6,4 +6,5 @@ sources:
       schema: default
       tables:
         - name: agg_selection_tour_funnel_events
+        - name: events
         - name: brand_de_ooh_berlinbikes_2023_manualbaptiste
