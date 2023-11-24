@@ -12,6 +12,7 @@ select
     {% for item in events %}
 
         min(case when lower(funnel_step) = '{{item}}' then event_timestamp else null end) as date_{{item}}{% if not loop.last %}, {% endif %}
+
     {% endfor  %}
 
    from funnel_events
