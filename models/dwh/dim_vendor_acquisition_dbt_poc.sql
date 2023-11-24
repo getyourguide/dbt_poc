@@ -1,11 +1,12 @@
 {{
     config(
-        materialized='incremental'
+        materialized='incremental',
+        partition_by='registration_date',
+        incremental_strategy='append'
     )
 }}
 
-{% set start_date = '2023-11-22' %}
-
+{% set start_date = '2023-11-23' %}
 
 with events as (
 
@@ -54,8 +55,8 @@ final as (
         '{{var("SUPPLIER")}}' as vendor_type,
         max(registration_date) as registration_date,
         max(event_timestamp) as registration_timestamp,
-        split(max(event_timestamp || '#' || acquisition_touchpoint_id), '#') [1] as acquisition_touchpoint_id,
-	    split(max(event_timestamp || '#' || registration_event_id), '#') [1] as registration_event_id
+        {{ get_latest_id('event_timestamp', 'acquisition_touchpoint_id') }},
+        {{ get_latest_id('event_timestamp', 'registration_event_id') }}
 
     from supplier_registration
 
