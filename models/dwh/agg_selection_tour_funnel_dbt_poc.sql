@@ -4,7 +4,7 @@ with funnel_events as (
 
     select * from {{ source('default', 'agg_selection_tour_funnel_events')}}
 
-
+       {{ dev_limit_rows() }}
 )
 select
 
