@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+    - name: test
+      database: hive_metastore
+      schema: test
+      tables:
+        - name: events_search

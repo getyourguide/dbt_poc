@@ -6,3 +6,32 @@ sources:
       schema: dwh
       tables:
         - name: dim_country
+        - name: dim_location
+        - name: dim_attribution_channel_group
+        - name: dim_budget_config_abacus
+        - name: dim_cost_provider
+        - name: dim_customer
+        - name: dim_date
+        - name: dim_destination_group
+        - name: dim_device
+        - name: dim_display_type
+        - name: dim_forecast_config_abacus
+        - name: dim_landing_page_type
+        - name: dim_platform
+        - name: dim_purchase_type
+        - name: dim_reseller
+        - name: dim_reseller_campaign
+        - name: dim_tour
+        - name: dim_tour_category
+        - name: dim_transaction_cohort
+        - name: dim_user
+        - name: dim_user_history
+        - name: fact_accounting_transaction
+        - name: fact_booking
+        - name: fact_booking_cancelation_request
+        - name: fact_budget
+        - name: fact_customer_trip
+        - name: fact_forecast
+        - name: fact_gwc
+        - name: fact_shopping_cart
+        - name: fact_supplier_adjustment_payment

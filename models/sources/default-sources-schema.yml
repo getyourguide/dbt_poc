@@ -8,3 +8,13 @@ sources:
         - name: agg_selection_tour_funnel_events
         - name: events
         - name: brand_de_ooh_berlinbikes_2023_manualbaptiste
+        - name: agg_source_market_cost_allocation
+        - name: stg_contribution_margin_without_ad_spend
+        - name: agg_attribution_channel_weights
+        - name: agg_contribution_margin_breakage
+        - name: contribution_margin_fixed_adspend_upload
+        - name: cost_allocation_breakage_upload
+        - name: dim_date
+        - name: events
+        - name: fact_attribution
+        - name: fact_attribution_channel_weights

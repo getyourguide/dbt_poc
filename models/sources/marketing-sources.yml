@@ -1,0 +1,11 @@
+version: 2
+
+sources:
+    - name: marketing
+      database: hive_metastore
+      schema: marketing
+      tables:
+        - name: dim_promo_with_display_type
+        - name: dim_touchpoint
+        - name: fact_booking_marketing
+        - name: fact_touchpoint_source_market

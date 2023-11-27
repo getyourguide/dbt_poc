@@ -35,6 +35,13 @@ vars:
   marketplace_reports_schema: 'marketplace_reports_test'
   public_schema: 'public_test'
   reports_schema: 'reports_test'
+  source-market-cost-allocation-start-date: '2023-10-01'
+  cost-allocation-marketing-end-date: '2023-10-01'
+  based-on-events-start-date: '2023-10-01'
+  end-date: '2023-10-01'
+  start-date: '2023-10-01'
+  touchpoint-start: '2023-10-01'
+  touchpoint-end: '2023-10-01'
   SUPPLIER_DOMAIN: supplier_getyourguide.com
   SUPPLIER: supplier
   EVENT_UICLICK: UIClick
