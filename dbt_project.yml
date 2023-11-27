@@ -42,4 +42,8 @@ vars:
   start-date: '2023-10-01'
   touchpoint-start: '2023-10-01'
   touchpoint-end: '2023-10-01'
-
+  SUPPLIER_DOMAIN: supplier_getyourguide.com
+  SUPPLIER: supplier
+  EVENT_UICLICK: UIClick
+  EVENT_SUPPLIERWEBUICLICK: SupplierWebUIClick
+  TARGET_SUPPLIERREGISTERACTION: SupplierRegisterAction
