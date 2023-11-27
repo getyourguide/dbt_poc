@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+    - name: public
+      database: hive_metastore
+      schema: public
+      tables:
+        - name: dim_date_deprecated

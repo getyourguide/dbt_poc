@@ -1,2 +1,4 @@
 # .dbtignore
 models/dwh/prio1_rivulus
+models/dwh/prio1_bkp
+models/dwh/prio1_test

@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+    - name: db_mirror_dbz
+      database: hive_metastore
+      schema: db_mirror_dbz
+      tables:
+        - name: catalog__tour_to_location
