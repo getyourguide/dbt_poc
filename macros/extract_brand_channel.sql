@@ -1,3 +1,7 @@
+
+
+
+
 {%- macro extract_brand_provider(utm_campaign) %}
     CASE
     WHEN utm_campaign RLIKE 'BIGBANG_2022_DE'

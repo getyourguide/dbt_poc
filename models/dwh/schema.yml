@@ -18,6 +18,7 @@ models:
     description: This incremental table selects a newly registered supplier's registration action with the touchpoint at the conversion.
     columns:
       - name: supplier_id
+        tag:
         tests:
           - unique
           - not_null

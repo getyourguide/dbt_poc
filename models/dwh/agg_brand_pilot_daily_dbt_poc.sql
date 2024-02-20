@@ -1,4 +1,3 @@
-
 {%- set data_sources = [ source('brand_reports', 'weekly_pilot_campaign_report') ,
                          source('default', 'brand_de_ooh_berlinbikes_2023_manualbaptiste')
                         ]
